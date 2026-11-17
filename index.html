@@ -1,51 +1,206 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><style>
-@font-face {
-  font-family: "Optimistic";
-  font-style: normal;
-  font-weight: 400 600;
-  font-display: swap;
-  src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Optimistic Mono";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
-}
-:where(html) {
-  font-family: "Optimistic", system-ui, sans-serif;
-}
-:where(code, pre, kbd, samp) {
-  font-family: "Optimistic Mono", ui-monospace, monospace;
-}
-</style>
+<head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Naibel - nitro-opti</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NITRO-OPTI</title>
 <style>
-body{background:#000;color:#e8e8e8;font-family:Arial,sans-serif;margin:0}
-a{color:#b06bff}
-header{border-bottom:1px solid #333;padding:24px;max-width:900px;margin:0 auto}
-.card{border:1px solid #333;padding:20px;margin:20px 0;background:#0a0a0a}
-.btn{display:inline-block;background:#7e11d6;color:#fff;padding:10px 16px;text-decoration:none;font-weight:bold}
-table{border-collapse:collapse;width:100%}
-td,th{border:1px solid #333;padding:8px;text-align:left}
-.wrap{max-width:900px;margin:0 auto;padding:0 16px 40px}
-footer{border-top:1px solid #333;padding:20px;text-align:center;color:#999}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#000;color:#fff;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+a{color:#b26bff}
+.top{position:sticky;top:0;background:#000;border-bottom:1px solid #222;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;z-index:10}
+.logo{font-weight:900;letter-spacing:2px;font-size:22px}
+.logo span{color:#7e11d6}
+select{background:#111;color:#fff;border:1px solid #333;padding:8px 10px;border-radius:8px}
+.hero{max-width:900px;margin:0 auto;padding:64px 20px 30px;text-align:center}
+.hero h1{font-size:52px;line-height:1.05;letter-spacing:-1px}
+.hero h1 span{color:#7e11d6}
+.hero p{margin-top:18px;font-size:20px;color:#ccc}
+.badges{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.badge{border:1px solid #333;border-radius:999px;padding:7px 14px;font-size:13px;color:#ddd;background:#0a0a0a}
+.wrap{max-width:900px;margin:0 auto;padding:10px 20px 60px}
+.card{border:1px solid #262626;border-radius:16px;padding:24px;margin:22px 0;background:#080808}
+.card h2{font-size:28px;margin-bottom:6px}
+.card h2 small{font-size:14px;color:#7e11d6;display:block;margin-top:4px}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.pill{background:#161616;border:1px solid #2a2a2a;border-radius:999px;padding:5px 11px;font-size:12px}
+h3{margin:18px 0 8px;font-size:17px;color:#fff}
+ol,ul{padding-left:20px;color:#ddd}
+li{margin:6px 0}
+code{background:#161616;border:1px solid #2a2a2a;padding:2px 7px;border-radius:6px;font-size:13px;word-break:break-all}
+pre{background:#0d0d0d;border:1px solid #2a2a2a;border-radius:12px;padding:14px;overflow:auto;font-size:13px;color:#ddd;margin-top:10px;white-space:pre-wrap}
+.btn{display:inline-block;margin-top:16px;background:#7e11d6;color:#fff;text-decoration:none;padding:12px 18px;border-radius:10px;font-weight:700}
+.btn.green{background:#16a34a}
+.btn.ghost{background:#111;border:1px solid #333}
+.footer{border-top:1px solid #222;padding:24px 20px;text-align:center;color:#999;font-size:14px}
+@media(max-width:600px){.hero h1{font-size:38px}.hero p{font-size:17px}}
 </style>
 </head>
 <body>
-<header><h1>Naibel - nitro-opti</h1><p>Programador. Creador de Nitro Optimizer.</p><p>GitHub: nitro-opti | TikTok: @daniel_opti</p></header>
-<div class="wrap">
-<h2>Proyectos</h2>
-<div class="card"><h3>1. Nitro Optimizer - Windows Edition v2.0</h3><p><b>Archivo: .bat</b> - Windows 10 y 11.</p><p>Plan Alto Rendimiento, desactivar efectos, Game DVR, SysMain, matar Defender, Cortana, Copilot, OneDrive, Edge, cortar telemetria, limpiar temporales, optimizar red, MODO DIABLO [29], punto de restauracion [30].</p><a class="btn" href="https://github.com/nitro-opti/Nitro-Optimizer/releases/tag/v1.2-Estable">Descargar desde GitHub</a><ol><li>Descarga .bat v1.2-Estable.</li><li>Clic derecho > Ejecutar como administrador.</li><li>Primero [30] crear punto.</li><li>Despues [01], [02], [11] o [29] MODO DIABLO.</li><li>No cierres hasta LISTO. Reinicia. Si falla [R] Restaurar.</li></ol></div>
-<div class="card"><h3>2. Nitro Optimizer - Android Edition v1.0</h3><p><b>Archivo: .py</b> - NO es APK, se corre en la PC con ADB.</p><p>Cualquier Android sin root. Borra bloatware Google, ZTE, Samsung, Xiaomi.</p><a class="btn" href="https://github.com/nitro-opti/Nitro-Optimizer/releases/tag/v1.2-Estable">Descargar desde GitHub</a><ol><li>Celular: Ajustes > Acerca del telefono > toca 7 veces Numero de compilacion > Depuracion USB ON.</li><li>Conecta con cable original, PERMITIR, cambia USB a Transferir archivos.</li><li>PC Windows: Python con Add to PATH, CMD, cd Descargas, python Nitro-Optimizer-Android-Edition.py, 1 Instalar ADB, 2 Conectar Celu, 3 NITRO OPTIMIZAR!</li><li>MAC: brew install python, brew install android-platform-tools, python3 Nitro-Optimizer-Android-Edition.py</li><li>LINUX: Arch sudo pacman -S android-tools tk, Ubuntu sudo apt install adb python3-tk</li></ol></div>
-<div class="card"><h3>3. NITRO I.A. PRO v1.0</h3><p><b>Archivo: .py</b> - nitro_ia_pro.py. IA local, privada, 36 modelos.</p><a class="btn" href="https://github.com/nitro-opti/Nitro-Optimizer/releases/tag/v1.2-Estable">Descargar desde GitHub</a><p>WINDOWS: Descarga .py, instala Python y Ollama, CMD, python nitro_ia_pro.py, Instalar Ollama, Prender Motor, elige qwen2.5:3b si PC 8GB, Descargar, escribe en ESCRIBE ACA PARA CHATEAR.</p></div>
-<div class="card"><h3>4. NitroOS11-PRO</h3><p><b>NitroOS - Basado en Tiny11, optimizado y personalizado por nitro-opti.</b></p><table><tr><th>Dato real</th><th>Valor</th></tr><tr><td>ISO pesa</td><td>6.3GB</td></tr><tr><td>Procesos</td><td>73 procesos</td></tr><tr><td>RAM usa</td><td>1.8GB de RAM</td></tr></table><p>Defender, Windows Update y Store eliminados desde raiz. Incluye Nitro Toolbox, Brave, drivers en C:\NitroOS\Installers.</p><p>Post-install 1: Automatica, verificacion + CompactOS. Post-install 2: Manual Nitro Toolbox, nada sin preguntar. Menu: 1 drivers, 2 dependencias, 3 rendimiento, 4 privacidad, 5 limpiar, 20 navegadores, 21 apps, 30 Nitro Ultimate, 31 Espanol, R restaurar, X salir.</p><a class="btn" href="https://drive.google.com/file/d/14J-4HDf6eDGpRGFyLncNQ-5wH3d5X3Yh/view?usp=sharing">Descargar ISO desde Drive (6.3GB)</a><ol><li>Descarga ISO 6.3GB.</li><li>USB con Ventoy o Rufus.</li><li>Reinicia, F12, elige USB.</li><li>Instala, va directo a escritorio con autounattend.xml.</li><li>Espera post-install automatica.</li><li>Abre Nitro Toolbox, corre 1, 2, 3, 4, 30.</li><li>Para navegadores 20, para apps 21.</li><li>Reinicia, verifica 73 procesos y 1.8GB RAM.</li></ol></div>
+<div class="top">
+<div class="logo">NITRO<span>-OPTI</span></div>
+<select id="lang" onchange="setLang(this.value)">
+<option value="es">Español Latino</option>
+<option value="en">English</option>
+<option value="pt">Português</option>
+<option value="fr">Français</option>
+</select>
 </div>
-<footer>Creado por Naibel (nitro-opti). TikTok @daniel_opti. NitroOS basado en Tiny11.</footer>
-<script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body>
+
+<div class="hero">
+<h1>NITRO-OPTI</h1>
+<p data-i18n="hero">hola esta es mi pagina, aqui estan mis proyectos pa pc malos como el mio xD</p>
+<div class="badges">
+<span class="badge">5 proyectos</span>
+<span class="badge">Fondo negro</span>
+<span class="badge">Sin bloatware</span>
+</div>
+</div>
+
+<div class="wrap">
+
+<!-- 1 NitroOS -->
+<div class="card">
+<h2>NitroOS11-PRO <small>Windows optimizado</small></h2>
+<div class="meta"><span class="pill">ISO 6.3GB</span><span class="pill">73 procesos</span><span class="pill">1.8GB RAM en reposo</span><span class="pill">Basado en Tiny11</span></div>
+<h3 data-i18n="what">Que es</h3>
+<p data-i18n="nitroos_what">Windows 11 limpio, sin bloatware, optimizado y personalizado por nitro-opti. Basado en Tiny11.</p>
+<h3 data-i18n="install">Como instalarlo</h3>
+<ol>
+<li data-i18n="nitroos_i1">Descarga la ISO de 6.3GB desde Drive.</li>
+<li data-i18n="nitroos_i2">Crea un USB booteable con Ventoy o Rufus.</li>
+<li data-i18n="nitroos_i3">Arranca desde el USB en modo UEFI.</li>
+<li data-i18n="nitroos_i4">Instala como Windows 11 normal, crea tu usuario.</li>
+</ol>
+<h3 data-i18n="use">Como usarlo</h3>
+<p data-i18n="nitroos_use">Prende y usa. Ya viene limpio, sin programas de más.</p>
+<a class="btn" href="https://drive.google.com/file/d/14J-4HDf6eDGpRGFyLncNQ-5wH3d5X3Yh/view?usp=sharing" target="_blank" data-i18n="download">Descargar ISO</a>
+</div>
+
+<!-- 2 Windows Optimizer -->
+<div class="card">
+<h2>Nitro Optimizer Windows Edition v2.0 <small>.bat, no es instalador</small></h2>
+<div class="meta"><span class="pill">Archivo .bat</span><span class="pill">Windows</span></div>
+<h3 data-i18n="what">Que es</h3>
+<p data-i18n="win_what">Un archivo .bat para optimizar Windows. No es instalador, no instala nada.</p>
+<h3 data-i18n="install">Como instalarlo</h3>
+<p data-i18n="win_install">No se instala. Solo descarga el .bat desde GitHub.</p>
+<h3 data-i18n="use">Como usarlo</h3>
+<ol>
+<li data-i18n="win_u1">Clic derecho en el .bat > Ejecutar como administrador.</li>
+<li data-i18n="win_u2">Elige en el menu: drivers, rendimiento, limpieza, privacidad.</li>
+<li data-i18n="win_u3">Reinicia si te lo pide.</li>
+</ol>
+<a class="btn ghost" href="https://github.com/nitro-opti" target="_blank">GitHub nitro-opti</a>
+</div>
+
+<!-- 3 Android -->
+<div class="card">
+<h2>Nitro Optimizer Android Edition v1.0 <small>.py, no es APK</small></h2>
+<div class="meta"><span class="pill">Archivo .py</span><span class="pill">Con ADB desde la PC</span></div>
+<h3 data-i18n="what">Que es</h3>
+<p data-i18n="and_what">Un archivo .py para optimizar Android desde la PC con ADB. No es APK, no se instala en el celular.</p>
+<h3 data-i18n="install">Como instalarlo</h3>
+<ol>
+<li data-i18n="and_i1">En la PC instala Python y android-tools (ADB).</li>
+<li data-i18n="and_i2">Descarga el .py desde GitHub.</li>
+</ol>
+<h3 data-i18n="use">Como usarlo</h3>
+<ol>
+<li data-i18n="and_u1">En el celular activa Opciones de desarrollador > Depuración USB.</li>
+<li data-i18n="and_u2">Conecta el celular por USB y acepta la depuración.</li>
+<li data-i18n="and_u3">En la PC corre: <code>python nitro-optimizer-android.py</code></li>
+<li data-i18n="and_u4">Sigue el menu en la terminal.</li>
+</ol>
+<a class="btn ghost" href="https://github.com/nitro-opti" target="_blank">GitHub nitro-opti</a>
+</div>
+
+<!-- 4 IA -->
+<div class="card">
+<h2>NITRO I.A. PRO v1.0 <small>.py, IA local con Ollama</small></h2>
+<div class="meta"><span class="pill">Archivo .py</span><span class="pill">Local, sin internet</span><span class="pill">Ollama</span></div>
+<h3 data-i18n="what">Que es</h3>
+<p data-i18n="ia_what">Un archivo .py, IA local con Ollama. Todo en tu PC, privado.</p>
+<h3 data-i18n="install">Como instalarlo</h3>
+<ol>
+<li data-i18n="ia_i1">Instala Python y Ollama en tu PC.</li>
+<li data-i18n="ia_i2">Descarga un modelo en Ollama.</li>
+<li data-i18n="ia_i3">Descarga el .py desde GitHub.</li>
+</ol>
+<h3 data-i18n="use">Como usarlo</h3>
+<ol>
+<li data-i18n="ia_u1">Corre el archivo .py.</li>
+<li data-i18n="ia_u2">Escribe tu pregunta en la terminal y te responde en local.</li>
+</ol>
+<a class="btn ghost" href="https://github.com/nitro-opti" target="_blank">GitHub nitro-opti</a>
+</div>
+
+<!-- 5 Nitro Linux -->
+<div class="card" style="border-color:#16a34a">
+<h2>Nitro Linux v1.0 <small>Base Arch, Niri + Noctalia</small></h2>
+<div class="meta"><span class="pill">ISO 1.8 GiB</span><span class="pill">Base Arch</span><span class="pill">Kernel linux-cachyos 7.3.3</span><span class="pill">Niri + Noctalia</span><span class="pill">611 paquetes</span><span class="pill">Firefox, Thunar, Mousepad, Foot, Calamares, OpenCode v2.3.0</span></div>
+<h3 data-i18n="what">Que es</h3>
+<p data-i18n="linux_what">Sistema con base Arch, kernel linux-cachyos 7.3.3, escritorio Niri + shell Noctalia. Solo lo esencial.</p>
+<p><code>SHA256: 539e2afa1215cf46f69a022244045f639b7bf5fae734465d1c5fffe92a6a5871</code></p>
+<h3 data-i18n="install">Como instalarlo</h3>
+<ol>
+<li data-i18n="linux_i1">Descarga la ISO desde Drive y verifica el SHA256.</li>
+<li data-i18n="linux_i2">Crea un USB con Ventoy o Etcher.</li>
+<li data-i18n="linux_i3">Arranca en modo UEFI-only.</li>
+<li data-i18n="linux_i4">En systemd-boot elige Nitro Linux v1.0.</li>
+<li data-i18n="linux_i5">En el live entra con usuario nitro / contraseña nitro.</li>
+<li data-i18n="linux_i6">Presiona Mod+I para abrir Calamares, instala, crea tu usuario, reinicia.</li>
+</ol>
+<h3 data-i18n="use">Como usarlo</h3>
+<p data-i18n="linux_use">Prende, abre Firefox, WiFi, Bluetooth y sonido ya funcionan, sin tocar la terminal.</p>
+<h3>QEMU</h3>
+<p data-i18n="linux_qemu">Usa -cpu host, es clave. Con qemu64 OpenCode (Bun) falla por falta de SSE4.2.</p>
+<pre>cp /usr/share/edk2/x64/OVMF_VARS.4m.fd /tmp/nitro-ovmf-vars.fd
+qemu-system-x86_64 -m 2048 -smp 2 -enable-kvm -cpu host -drive if=pflash,format=raw,readonly=on,file=/usr/share/edk2/x64/OVMF_CODE.4m.fd -drive if=pflash,format=raw,file=/tmp/nitro-ovmf-vars.fd -cdrom nitro-linux-1.0.0-x86_64.iso</pre>
+<a class="btn green" href="https://drive.google.com/file/d/1iJOJp0WjdUTFKTid5wrOdSr0eKpUWOHB/view?usp=sharing" target="_blank" data-i18n="download">Descargar ISO</a>
+</div>
+
+</div>
+
+<div class="footer">
+Naibel (nitro-opti) — <a href="https://nitro-opti.github.io">nitro-opti.github.io</a> — TikTok <a href="https://www.tiktok.com/@daniel_opti" target="_blank">@daniel_opti</a> — GitHub <a href="https://github.com/nitro-opti" target="_blank">nitro-opti</a>
+</div>
+
+<script>
+const T = {
+es: {hero:"hola esta es mi pagina, aqui estan mis proyectos pa pc malos como el mio xD",what:"Que es",install:"Como instalarlo",use:"Como usarlo",download:"Descargar ISO",
+nitroos_what:"Windows 11 limpio, sin bloatware, optimizado y personalizado por nitro-opti. Basado en Tiny11.",nitroos_i1:"Descarga la ISO de 6.3GB desde Drive.",nitroos_i2:"Crea un USB booteable con Ventoy o Rufus.",nitroos_i3:"Arranca desde el USB en modo UEFI.",nitroos_i4:"Instala como Windows 11 normal, crea tu usuario.",nitroos_use:"Prende y usa. Ya viene limpio, sin programas de más.",
+win_what:"Un archivo .bat para optimizar Windows. No es instalador, no instala nada.",win_install:"No se instala. Solo descarga el .bat desde GitHub.",win_u1:"Clic derecho en el .bat > Ejecutar como administrador.",win_u2:"Elige en el menu: drivers, rendimiento, limpieza, privacidad.",win_u3:"Reinicia si te lo pide.",
+and_what:"Un archivo .py para optimizar Android desde la PC con ADB. No es APK, no se instala en el celular.",and_i1:"En la PC instala Python y android-tools (ADB).",and_i2:"Descarga el .py desde GitHub.",and_u1:"En el celular activa Opciones de desarrollador > Depuración USB.",and_u2:"Conecta el celular por USB y acepta la depuración.",and_u3:"En la PC corre: python nitro-optimizer-android.py",and_u4:"Sigue el menu en la terminal.",
+ia_what:"Un archivo .py, IA local con Ollama. Todo en tu PC, privado.",ia_i1:"Instala Python y Ollama en tu PC.",ia_i2:"Descarga un modelo en Ollama.",ia_i3:"Descarga el .py desde GitHub.",ia_u1:"Corre el archivo .py.",ia_u2:"Escribe tu pregunta en la terminal y te responde en local.",
+linux_what:"Sistema con base Arch, kernel linux-cachyos 7.3.3, escritorio Niri + shell Noctalia. Solo lo esencial.",linux_i1:"Descarga la ISO desde Drive y verifica el SHA256.",linux_i2:"Crea un USB con Ventoy o Etcher.",linux_i3:"Arranca en modo UEFI-only.",linux_i4:"En systemd-boot elige Nitro Linux v1.0.",linux_i5:"En el live entra con usuario nitro / contraseña nitro.",linux_i6:"Presiona Mod+I para abrir Calamares, instala, crea tu usuario, reinicia.",linux_use:"Prende, abre Firefox, WiFi, Bluetooth y sonido ya funcionan, sin tocar la terminal.",linux_qemu:"Usa -cpu host, es clave. Con qemu64 OpenCode (Bun) falla por falta de SSE4.2."},
+en: {hero:"hi this is my page, here are my projects for bad pcs like mine xD",what:"What it is",install:"How to install it",use:"How to use it",download:"Download ISO",
+nitroos_what:"Clean Windows 11, no bloatware, optimized and customized by nitro-opti. Based on Tiny11.",nitroos_i1:"Download the 6.3GB ISO from Drive.",nitroos_i2:"Make a bootable USB with Ventoy or Rufus.",nitroos_i3:"Boot from USB in UEFI mode.",nitroos_i4:"Install like normal Windows 11, create your user.",nitroos_use:"Turn on and use. Already clean.",
+win_what:"A .bat file to optimize Windows. Not an installer.",win_install:"No install. Just download the .bat from GitHub.",win_u1:"Right click the .bat > Run as administrator.",win_u2:"Pick in the menu: drivers, performance, cleaning, privacy.",win_u3:"Restart if it asks.",
+and_what:"A .py file to optimize Android from PC with ADB. Not an APK.",and_i1:"On PC install Python and android-tools (ADB).",and_i2:"Download the .py from GitHub.",and_u1:"On phone enable Developer options > USB debugging.",and_u2:"Connect phone by USB and accept debugging.",and_u3:"On PC run: python nitro-optimizer-android.py",and_u4:"Follow the menu in terminal.",
+ia_what:"A .py file, local AI with Ollama. All on your PC, private.",ia_i1:"Install Python and Ollama on your PC.",ia_i2:"Download a model in Ollama.",ia_i3:"Download the .py from GitHub.",ia_u1:"Run the .py file.",ia_u2:"Write your question in terminal, it answers locally.",
+linux_what:"System with Arch base, linux-cachyos 7.3.3 kernel, Niri desktop + Noctalia shell. Only essentials.",linux_i1:"Download ISO from Drive and check SHA256.",linux_i2:"Make USB with Ventoy or Etcher.",linux_i3:"Boot in UEFI-only mode.",linux_i4:"In systemd-boot pick Nitro Linux v1.0.",linux_i5:"In live login with user nitro / password nitro.",linux_i6:"Press Mod+I to open Calamares, install, create your user, reboot.",linux_use:"Turn on, open Firefox, WiFi, Bluetooth and sound already work.",linux_qemu:"Use -cpu host, its key. With qemu64 OpenCode (Bun) fails for missing SSE4.2."},
+pt: {hero:"oi essa e minha pagina, aqui estao meus projetos pra pc ruins como o meu xD",what:"O que e",install:"Como instalar",use:"Como usar",download:"Baixar ISO",
+nitroos_what:"Windows 11 limpo, sem bloatware, otimizado e personalizado por nitro-opti. Baseado no Tiny11.",nitroos_i1:"Baixe a ISO de 6.3GB do Drive.",nitroos_i2:"Crie USB bootavel com Ventoy ou Rufus.",nitroos_i3:"Inicie pelo USB em modo UEFI.",nitroos_i4:"Instale como Windows 11 normal, crie seu usuario.",nitroos_use:"Liga e usa. Ja vem limpo.",
+win_what:"Um arquivo .bat para otimizar o Windows. Nao e instalador.",win_install:"Nao instala. So baixe o .bat do GitHub.",win_u1:"Clique direito no .bat > Executar como administrador.",win_u2:"Escolha no menu: drivers, desempenho, limpeza, privacidade.",win_u3:"Reinicie se pedir.",
+and_what:"Um arquivo .py para otimizar Android do PC com ADB. Nao e APK.",and_i1:"No PC instale Python e android-tools (ADB).",and_i2:"Baixe o .py do GitHub.",and_u1:"No celular ative Opcoes de desenvolvedor > Depuracao USB.",and_u2:"Conecte o celular por USB e aceite a depuracao.",and_u3:"No PC rode: python nitro-optimizer-android.py",and_u4:"Siga o menu no terminal.",
+ia_what:"Um arquivo .py, IA local com Ollama. Tudo no seu PC, privado.",ia_i1:"Instale Python e Ollama no seu PC.",ia_i2:"Baixe um modelo no Ollama.",ia_i3:"Baixe o .py do GitHub.",ia_u1:"Rode o arquivo .py.",ia_u2:"Escreva sua pergunta no terminal e responde local.",
+linux_what:"Sistema com base Arch, kernel linux-cachyos 7.3.3, Niri + Noctalia. So o essencial.",linux_i1:"Baixe a ISO do Drive e confira o SHA256.",linux_i2:"Crie USB com Ventoy ou Etcher.",linux_i3:"Inicie em modo UEFI-only.",linux_i4:"No systemd-boot escolha Nitro Linux v1.0.",linux_i5:"No live entre com usuario nitro / senha nitro.",linux_i6:"Aperte Mod+I para abrir o Calamares, instale, crie seu usuario, reinicie.",linux_use:"Liga, abre o Firefox, WiFi, Bluetooth e som ja funcionam.",linux_qemu:"Use -cpu host, e chave. Com qemu64 OpenCode (Bun) falha por falta de SSE4.2."},
+fr: {hero:"salut c est ma page, voici mes projets pour pc nuls comme le mien xD",what:"C est quoi",install:"Comment l installer",use:"Comment l utiliser",download:"Télécharger ISO",
+nitroos_what:"Windows 11 propre, sans bloatware, optimisé et personnalisé par nitro-opti. Basé sur Tiny11.",nitroos_i1:"Télécharge l ISO de 6.3GB depuis Drive.",nitroos_i2:"Crée une clé USB bootable avec Ventoy ou Rufus.",nitroos_i3:"Démarre depuis USB en mode UEFI.",nitroos_i4:"Installe comme Windows 11 normal, crée ton utilisateur.",nitroos_use:"Allume et utilise. Déjà propre.",
+win_what:"Un fichier .bat pour optimiser Windows. Pas un installateur.",win_install:"Pas d install. Télécharge juste le .bat depuis GitHub.",win_u1:"Clic droit sur le .bat > Exécuter en tant qu administrateur.",win_u2:"Choisis dans le menu: drivers, performance, nettoyage, vie privée.",win_u3:"Redémarre si ça le demande.",
+and_what:"Un fichier .py pour optimiser Android depuis le PC avec ADB. Pas un APK.",and_i1:"Sur PC installe Python et android-tools (ADB).",and_i2:"Télécharge le .py depuis GitHub.",and_u1:"Sur le téléphone active Options développeur > Débogage USB.",and_u2:"Connecte le téléphone par USB et accepte le débogage.",and_u3:"Sur PC lance: python nitro-optimizer-android.py",and_u4:"Suis le menu dans le terminal.",
+ia_what:"Un fichier .py, IA locale avec Ollama. Tout sur ton PC, privé.",ia_i1:"Installe Python et Ollama sur ton PC.",ia_i2:"Télécharge un modèle dans Ollama.",ia_i3:"Télécharge le .py depuis GitHub.",ia_u1:"Lance le fichier .py.",ia_u2:"Écris ta question dans le terminal, ça répond en local.",
+linux_what:"Système base Arch, kernel linux-cachyos 7.3.3, Niri + Noctalia. Que l essentiel.",linux_i1:"Télécharge l ISO depuis Drive et vérifie le SHA256.",linux_i2:"Crée une clé USB avec Ventoy ou Etcher.",linux_i3:"Démarre en mode UEFI-only.",linux_i4:"Dans systemd-boot choisis Nitro Linux v1.0.",linux_i5:"En live connecte-toi avec nitro / nitro.",linux_i6:"Appuie sur Mod+I pour ouvrir Calamares, installe, crée ton utilisateur, redémarre.",linux_use:"Allume, ouvre Firefox, WiFi, Bluetooth et son marchent déjà.",linux_qemu:"Utilise -cpu host, c est clé. Avec qemu64 OpenCode (Bun) échoue, manque SSE4.2."}
+};
+function setLang(l){
+  const d = T[l] || T.es;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k = el.getAttribute('data-i18n');
+    if(d[k]) el.textContent = d[k];
+  });
+  document.documentElement.lang = l;
+}
+</script>
+</body>
 </html>
