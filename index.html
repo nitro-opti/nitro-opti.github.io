@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NITRO-OPTI</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#000;color:#fff;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+a{color:#b26bff}
+.top{position:sticky;top:0;background:rgba(0,0,0,.9);backdrop-filter:blur(6px);border-bottom:1px solid #222;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;z-index:10}
+.logo{font-weight:900;letter-spacing:2px;font-size:22px}
+.logo span{color:#7e11d6}
+.hero{max-width:900px;margin:0 auto;padding:64px 20px 20px;text-align:center}
+.hero h1{font-size:52px;line-height:1.05;letter-spacing:-1px}
+.hero h1 span{color:#7e11d6}
+.hero p{margin-top:18px;font-size:20px;color:#ccc}
+.note{max-width:900px;margin:18px auto 0;padding:0 20px;text-align:center;color:#aaa;font-size:15px}
+.badges{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.badge{border:1px solid #333;border-radius:999px;padding:7px 14px;font-size:13px;color:#ddd;background:#0a0a0a}
+.wrap{max-width:900px;margin:0 auto;padding:10px 20px 60px}
+.card{border:1px solid #2a2a2a;border-radius:24px;padding:26px;margin:22px 0;background:linear-gradient(180deg,#0b0b0b,#080808);box-shadow:0 10px 30px rgba(0,0,0,.5);transition:transform .2s, box-shadow .2s, border-color .2s}
+.card:hover{transform:translateY(-3px);border-color:#7e11d6;box-shadow:0 0 0 1px #7e11d6, 0 18px 40px rgba(126,17,214,.25)}
+.card.green:hover{border-color:#16a34a;box-shadow:0 0 0 1px #16a34a, 0 18px 40px rgba(22,163,74,.25)}
+.card h2{font-size:28px;margin-bottom:6px}
+.card h2 small{font-size:14px;color:#b26bff;display:block;margin-top:4px}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.pill{background:#161616;border:1px solid #2a2a2a;border-radius:999px;padding:6px 12px;font-size:12px}
+h3{margin:18px 0 8px;font-size:17px}
+ol,ul{padding-left:20px;color:#ddd}
+li{margin:6px 0}
+code{background:#161616;border:1px solid #2a2a2a;padding:2px 7px;border-radius:8px;font-size:13px;word-break:break-all}
+.btn{display:inline-block;margin-top:16px;background:#7e11d6;color:#fff;text-decoration:none;padding:13px 20px;border-radius:999px;font-weight:700;transition:transform .15s}
+.btn:hover{transform:scale(1.03)}
+.btn.green{background:#16a34a}
+.btn.ghost{background:#111;border:1px solid #333}
+.footer{border-top:1px solid #222;padding:24px 20px;text-align:center;color:#999;font-size:14px;border-radius:0}
+@media(max-width:600px){.hero h1{font-size:38px}.hero p{font-size:17px}.card{border-radius:20px}}
+</style>
+</head>
+<body>
+<div class="top"><div class="logo">NITRO<span>-OPTI</span></div><div style="font-size:13px;color:#999">página web</div></div>
+<div class="hero"><h1>NITRO<span>-OPTI</span></h1><p>hola esta es mi pagina, aqui estan mis proyectos pa pc malos como el mio xD</p><div class="badges"><span class="badge">5 proyectos</span><span class="badge">Fondo oscuro</span><span class="badge">Sin bloatware</span></div></div>
+<div class="note">Lee los pasos en orden y no te saltes el respaldo ni el reinicio.</div>
+<div class="wrap">
+
+<div class="card">
+<h2>NitroOS11-PRO <small>Windows optimizado</small></h2>
+<div class="meta"><span class="pill">ISO 5.8GB</span><span class="pill">73 procesos</span><span class="pill">1.8GB RAM en reposo</span><span class="pill">Basado en Tiny11</span></div>
+<h3>Que es</h3><p>Windows 11 limpio, sin bloatware, optimizado y personalizado por nitro-opti. Basado en Tiny11.</p>
+<h3>Como instalarlo</h3><ol><li>Descarga la ISO de 5.8GB desde Drive.</li><li>Crea un USB booteable con Ventoy o Rufus.</li><li>Arranca desde el USB en modo UEFI.</li><li>Instala como Windows 11 normal, crea tu usuario.</li></ol>
+<h3>Como usarlo</h3><p>Prende y usa. Ya viene limpio, sin programas de más.</p>
+<a class="btn" href="https://drive.google.com/file/d/14J-4HDf6eDGpRGFyLncNQ-5wH3d5X3Yh/view?usp=sharing" target="_blank">Descargar ISO</a>
+</div>
+
+<div class="card">
+<h2>Nitro Optimizer Windows Edition v2.0 <small>.bat, no es instalador</small></h2>
+<div class="meta"><span class="pill">Archivo .bat</span><span class="pill">Windows</span></div>
+<h3>Que es</h3><p>Un archivo .bat para optimizar Windows. No es instalador, no instala nada.</p>
+<h3>Como instalarlo</h3><p>No se instala. Solo descarga el .bat desde GitHub.</p>
+<h3>Como usarlo</h3><ol><li>Clic derecho en el .bat &gt; Ejecutar como administrador.</li><li>Elige en el menu: drivers, rendimiento, limpieza, privacidad.</li><li>Reinicia si te lo pide.</li></ol>
+<a class="btn ghost" href="https://github.com/nitro-opti" target="_blank">GitHub nitro-opti</a>
+</div>
+
+<div class="card">
+<h2>Nitro Optimizer Android Edition v1.0 <small>.py, no es APK</small></h2>
+<div class="meta"><span class="pill">Archivo .py</span><span class="pill">Con ADB desde la PC</span></div>
+<h3>Que es</h3><p>Un archivo .py para optimizar Android desde la PC con ADB. No es APK, no se instala en el celular.</p>
+<h3>Como instalarlo</h3><ol><li>En la PC instala Python y android-tools (ADB).</li><li>Descarga el .py desde GitHub.</li></ol>
+<h3>Como usarlo</h3><ol><li>En el celular activa Opciones de desarrollador &gt; Depuración USB.</li><li>Conecta el celular por USB y acepta la depuración.</li><li>En la PC corre: <code>python nitro-optimizer-android.py</code></li><li>Sigue el menu en la terminal.</li></ol>
+<a class="btn ghost" href="https://github.com/nitro-opti" target="_blank">GitHub nitro-opti</a>
+</div>
+
+<div class="card">
+<h2>NITRO I.A. PRO v1.0 <small>.py, IA local con Ollama</small></h2>
+<div class="meta"><span class="pill">Archivo .py</span><span class="pill">Local, sin internet</span><span class="pill">Ollama</span></div>
+<h3>Que es</h3><p>Un archivo .py, IA local con Ollama. Todo en tu PC, privado.</p>
+<h3>Como instalarlo</h3><ol><li>Instala Python y Ollama en tu PC.</li><li>Descarga un modelo en Ollama.</li><li>Descarga el .py desde GitHub.</li></ol>
+<h3>Como usarlo</h3><ol><li>Corre el archivo .py.</li><li>Escribe tu pregunta en la terminal y te responde en local.</li></ol>
+<a class="btn ghost" href="https://github.com/nitro-opti" target="_blank">GitHub nitro-opti</a>
+</div>
+
+<div class="card green" style="border-color:#1e3a2a">
+<h2>Nitro Linux v1.0 <small>Base Arch, Hyprland + Serpantinum</small></h2>
+<div class="meta"><span class="pill">ISO ~2.0 GB</span><span class="pill">Base Arch</span><span class="pill">Kernel linux-cachyos</span><span class="pill">Hyprland + Serpantinum</span><span class="pill">Firefox, Thunar, Mousepad, Foot, Calamares, OpenCode</span></div>
+<h3>Que es</h3><p>Sistema con base Arch, kernel linux-cachyos, Hyprland + Serpantinum, con el wallpaper fijo. Solo lo esencial.</p>
+<h3>Como instalarlo</h3><ol><li>Descarga la ISO desde Drive.</li><li>Crea un USB con Ventoy o Etcher.</li><li>Arranca en modo UEFI-only.</li><li>Entra solo con autologin, sin login ni contraseña.</li><li>Welcome automático, Calamares se abre solo a los 4 segundos sin pedir contraseña, instala, crea tu usuario, reinicia.</li></ol>
+<h3>Como usarlo</h3><p>Prende, ya estás dentro, wallpaper intacto, welcome automático. Atajos: Mod+T terminal, Mod+D launcher, Mod+I instalador. WiFi, Bluetooth, sonido y impresora con GUI.</p>
+<a class="btn green" href="https://drive.google.com/file/d/1zwbp9GjrGoJGvsT3Z7NRZLD2PHR92-Ak/view?usp=drive_link" target="_blank">Descargar ISO</a>
+</div>
+
+</div>
+<div class="footer">Naibel (nitro-opti) — <a href="https://nitro-opti.github.io">nitro-opti.github.io</a> — TikTok <a href="https://www.tiktok.com/@daniel_opti" target="_blank">@daniel_opti</a> — GitHub <a href="https://github.com/nitro-opti" target="_blank">nitro-opti</a></div>
+</body>
+</html>
